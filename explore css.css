@@ -1,0 +1,52 @@
+explore css
+/* 
+   CrowdPoem - Explore Page Stylesheet
+   Styles for the content browsing page
+*/
+
+/* ===== EXPLORE HEADER ===== */
+.explore-header {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px var(--spacing-md) var(--spacing-lg);
+    background: linear-gradient(135deg, rgba(90, 125, 42, 0.1) 0%, rgba(139, 90, 43, 0.2) 100%);
+    text-align: center;
+}
+
+.explore-header-content {
+    max-width: 800px;
+}
+
+.explore-header h1 {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.explore-header p {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--dark-color);
+    font-family: var(--accent-font);
+}
+
+/* Search bar */
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-bar {
+    display: flex;
+    background-color: var(--card-color);
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition-normal);
+}
+
+.search-bar:focus-within {
+    box-shadow: var(--box-shadow-hover);
+    transform

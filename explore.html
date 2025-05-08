@@ -1,0 +1,321 @@
+explore
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - Poetic Haven</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/explore.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1><a href="../index.html"><span class="typing-logo">Poetic</span> Haven</a></h1>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="explore.html" class="active">Explore</a></li>
+                <li><a href="create.html">Create</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn login-btn">Login</a>
+            <a href="signup.html" class="btn signup-btn">Sign Up</a>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Explore Header -->
+    <header class="explore-header">
+        <div class="explore-header-content">
+            <h1>Discover Literary Works</h1>
+            <p>Explore a diverse collection of poems, stories, essays, and articles from our community of writers.</p>
+            
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search by title, author, or keywords...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Explore Content -->
+    <section class="explore-content">
+        <div class="explore-container">
+            <!-- Filters -->
+            <div class="filters-container">
+                <div class="category-filters">
+                    <button class="filter-btn active" data-filter="all">All Works</button>
+                    <button class="filter-btn" data-filter="poem">Poems</button>
+                    <button class="filter-btn" data-filter="short-story">Short Stories</button>
+                    <button class="filter-btn" data-filter="essay">Essays</button>
+                    <button class="filter-btn" data-filter="article">Articles</button>
+                </div>
+                
+                <div class="sort-filters">
+                    <div class="sort-group">
+                        <label for="sort-select">Sort By:</label>
+                        <select class="sort-select" id="sort-select">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="popular">Most Popular</option>
+                            <option value="comments">Most Commented</option>
+                        </select>
+                    </div>
+                    
+                    <div class="sort-group">
+                        <label for="time-select">Time Period:</label>
+                        <select class="time-select" id="time-select">
+                            <option value="all-time">All Time</option>
+                            <option value="this-week">This Week</option>
+                            <option value="this-month">This Month</option>
+                            <option value="this-year">This Year</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Works Grid -->
+            <div class="works-container">
+                <!-- Poem 1 -->
+                <div class="work-card" data-category="poem">
+                    <div class="work-image">
+                        <img src="../images/poem1.jpg" alt="Whispers of Autumn">
+                    </div>
+                    <div class="work-content">
+                        <h3>Whispers of Autumn</h3>
+                        <p class="work-author">By Emily Chen</p>
+                        <p class="work-excerpt">Crimson leaves dance in the wind, a symphony of colors painting the sky. The earth breathes a sigh as summer fades into memory...</p>
+                        <div class="work-meta">
+                            <span><i class="fas fa-heart"></i> 243</span>
+                            <span><i class="fas fa-comment"></i> 42</span>
+                            <span><i class="fas fa-calendar-alt"></i> May 12, 2023</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <!-- Short Story 1 -->
+                <div class="work-card" data-category="short-story">
+                    <div class="work-image">
+                        <img src="../images/story1.jpg" alt="The Forgotten Path">
+                    </div>
+                    <div class="work-content">
+                        <h3>The Forgotten Path</h3>
+                        <p class="work-author">By James Wilson</p>
+                        <p class="work-excerpt">The old trail wound through the forest, secrets hidden beneath centuries of fallen leaves. I found it on a Tuesday, when the mist hung low...</p>
+                        <div class="work-meta">
+                            <span><i class="fas fa-heart"></i> 187</span>
+                            <span><i class="fas fa-comment"></i> 35</span>
+                            <span><i class="fas fa-calendar-alt"></i> May 10, 2023</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <!-- Poem 2 -->
+                <div class="work-card" data-category="poem">
+                    <div class="work-image">
+                        <img src="../images/poem2.jpg" alt="Ocean's Lullaby">
+                    </div>
+                    <div class="work-content">
+                        <h3>Ocean's Lullaby</h3>
+                        <p class="work-author">By Sophia Martinez</p>
+                        <p class="work-excerpt">Waves crash against the shore, a timeless rhythm that speaks to the soul. Salt-kissed air fills my lungs as I stand at the edge of infinity...</p>
+                        <div class="work-meta">
+                            <span><i class="fas fa-heart"></i> 312</span>
+                            <span><i class="fas fa-comment"></i> 56</span>
+                            <span><i class="fas fa-calendar-alt"></i> May 8, 2023</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <!-- Essay 1 -->
+                <div class="work-card" data-category="essay">
+                    <div class="work-image">
+                        <img src="../images/essay1.jpg" alt="The Digital Age and Literature">
+                    </div>
+                    <div class="work-content">
+                        <h3>The Digital Age and Literature</h3>
+                        <p class="work-author">By Michael Brown</p>
+                        <p class="work-excerpt">As we navigate the ever-evolving landscape of digital media, the question arises: how does this transformation affect our relationship with literature?</p>
+                        <div class="work-meta">
+                            <span><i class="fas fa-heart"></i> 156</span>
+                            <span><i class="fas fa-comment"></i> 28</span>
+                            <span><i class="fas fa-calendar-alt"></i> May 5, 2023</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <!-- Article 1 -->
+                <div class="work-card" data-category="article">
+                    <div class="work-image">
+                        <img src="../images/article1.jpg" alt="The Resurgence of Poetry in Modern Culture">
+                    </div>
+                    <div class="work-content">
+                        <h3>The Resurgence of Poetry in Modern Culture</h3>
+                        <p class="work-author">By Sarah Johnson</p>
+                        <p class="work-excerpt">In recent years, poetry has experienced a remarkable revival, particularly among younger generations. Social media platforms have become unexpected venues for poetic expression...</p>
+                        <div class="work-meta">
+                            <span><i class="fas fa-heart"></i> 203</span>
+                            <span><i class="fas fa-comment"></i> 47</span>
+                            <span><i class="fas fa-calendar-alt"></i> May 3, 2023</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <!-- Short Story 2 -->
+                <div class="work-card" data-category="short-story">
+                    <div class="work-image">
+                        <img src="../images/story2.jpg" alt="The Clockmaker's Daughter">
+                    </div>
+                    <div class="work-content">
+                        <h3>The Clockmaker's Daughter</h3>
+                        <p class="work-author">By David Lee</p>
+                        <p class="work-excerpt">The ticking never stopped in our house. Father's workshop was filled with clocks of all shapes and sizes, each with its own voice, its own story to tell...</p>
+                        <div class="work-meta">
+                            <span><i class="fas fa-heart"></i> 278</span>
+                            <span><i class="fas fa-comment"></i> 51</span>
+                            <span><i class="fas fa-calendar-alt"></i> April 29, 2023</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <!-- Article 2 -->
+                <div class="work-card" data-category="article">
+                    <div class="work-image">
+                        <img src="../images/article2.jpg" alt="The Art of Storytelling in the Digital Era">
+                    </div>
+                    <div class="work-content">
+                        <h3>The Art of Storytelling in the Digital Era</h3>
+                        <p class="work-author">By Robert Thompson</p>
+                        <p class="work-excerpt">Storytelling has evolved dramatically with the advent of digital platforms. From interactive fiction to multimedia narratives, the boundaries of traditional storytelling continue to expand...</p>
+                        <div class="work-meta">
+                            <span><i class="fas fa-heart"></i> 189</span>
+                            <span><i class="fas fa-comment"></i> 32</span>
+                            <span><i class="fas fa-calendar-alt"></i> April 25, 2023</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <!-- Poem 3 -->
+                <div class="work-card" data-category="poem">
+                    <div class="work-image">
+                        <img src="../images/poem3.jpg" alt="Midnight Thoughts">
+                    </div>
+                    <div class="work-content">
+                        <h3>Midnight Thoughts</h3>
+                        <p class="work-author">By Anna Kim</p>
+                        <p class="work-excerpt">In the quiet hours when the world sleeps, my mind wanders through landscapes of memory and possibility. Stars whisper secrets to those who listen...</p>
+                        <div class="work-meta">
+                            <span><i class="fas fa-heart"></i> 231</span>
+                            <span><i class="fas fa-comment"></i> 39</span>
+                            <span><i class="fas fa-calendar-alt"></i> April 22, 2023</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <button class="btn load-more-btn"><i class="fas fa-plus"></i> Load More</button>
+        </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h2>Stay Inspired</h2>
+                <p>Subscribe to our newsletter to receive weekly curated works and literary inspiration.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Poetic Haven</h2>
+                <p>A sanctuary for literary expression</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="create.html">Create</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="copyright.html">Copyright</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Stay updated with the latest features and literary events.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Poetic Haven. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="../js/particles-config.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/explore.js"></script>
+</body>
+</html>
